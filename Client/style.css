@@ -1,12 +1,14 @@
 body {
-    background: #4D4D4D;
-    color: #FFFFFF;
+    background: #3D3D3D;
+    color: #DFDFDF;
     font-family: century gothic,trebuchet ms,verdana,arial;
-    font-size: 22px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    color: #FFFFFF;
+    color: #DFDFDF;
     text-decoration: none;
 }
 
@@ -21,6 +23,7 @@ li {
 
 header {
     width: 120px;
+    margin: 5px 0 0 5px;
 }
 
 header a span {
@@ -35,18 +38,38 @@ nav {
     position:fixed;
     top: 50%;
     background: #AD235E;
-    line-height: 80px;
+    /*background: #B71766;*/
     width: 75%;
+    left:0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 80px;
 }
 
-nav ul 
-{
+nav ul {
     float: right;
+    margin: 0 20px 0 0;
 }
 
 nav ul li {
     float: left;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
+nav ul li a 
+{
+    color: #FFF;
+    font-size : 22px;
+}
 
+footer div
+{
+    position: absolute;
+    top: 95%;
+    line-height: 14px;
+    font-size: 12px;
+    width: 50%;
+    border-top: 1px solid;
+    padding: 5px 0 0 5px;
+    color: #ADADAD;
+}
