@@ -1,5 +1,6 @@
 body {
     background: #191A1B;
+	/*background: #0D0F11;*/
     color: #DFDFDF;
     font-family: century gothic,trebuchet ms,verdana,arial;
     font-size: 18px;
@@ -81,9 +82,11 @@ footer div
 	margin: auto;
 	line-height: 1.6;
 	background: #0D0F11;
+	/*background: #191A1B;*/
 	border-radius: 5px;
 	padding: 20px;
 	min-height: 500px;
+	box-shadow: 12px 12px rgba(0,0,0,0.22);
 }
 
 #main h1{
