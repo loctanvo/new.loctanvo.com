@@ -1,5 +1,5 @@
 body {
-    background: #3D3D3D;
+    background: #191A1B;
     color: #DFDFDF;
     font-family: century gothic,trebuchet ms,verdana,arial;
     font-size: 18px;
@@ -65,11 +65,46 @@ nav ul li a
 footer div
 {
     position: absolute;
-    top: 95%;
+	bottom: 20px;
     line-height: 14px;
     font-size: 12px;
     width: 50%;
-    border-top: 1px solid;
-    padding: 5px 0 0 5px;
-    color: #ADADAD;
+    border-top: 1px dotted #3A3D3F;
+    padding: 10px 0 0 5px;
+    color: #728088;
+}
+
+#main 
+{
+    clear:both;
+    width: 800px;
+	margin: auto;
+	line-height: 1.6;
+	background: #0D0F11;
+	border-radius: 5px;
+	padding: 20px;
+	min-height: 500px;
+}
+
+#main h1{
+	color: #AD235E;
+	margin: 0;
+}
+
+#main #leftColumn{
+	float: left;
+}
+
+#main #rightColumn{
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+#about #main #leftColumn{
+	background-image: url(../Images/Loc_RightHalf_bw.png) no-repeat;
+	width: 50%;
+}
+
+#about #main #rightColumn img{
+	border-left: 2px solid #3A3D3F;
 }
