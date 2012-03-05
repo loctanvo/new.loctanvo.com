@@ -45,6 +45,7 @@ nav {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     line-height: 80px;
+	box-shadow: 10px 10px rgba(0,0,0,0.22);
 }
 
 nav ul {
@@ -110,4 +111,12 @@ footer div
 
 #about #main #rightColumn img{
 	border-left: 2px solid #3A3D3F;
+}
+
+.pink{
+	color: #AD235E;
+}
+
+.blue{
+
 }
