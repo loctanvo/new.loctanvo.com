@@ -63,9 +63,9 @@ nav li.active{
 
 #main {
     background: none repeat scroll 0 0 #4D4D4D;
-    border-bottom: 1px solid #2D2D2D;
+    border-bottom: 1px solid #FFF;
     border-radius: 5px 5px 5px 5px;
-    border-right: 1px solid #2D2D2D;
+    border-right: 1px solid #FFF;
     box-shadow: 3px 3px 3px #2A2A2A inset;
     margin: 40px auto;
     min-height: 500px;
