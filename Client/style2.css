@@ -71,7 +71,6 @@ nav li.active{
     margin: 40px auto;
     width: 800px;
     color: #DFDFDF;
-    line-height: 26px;
     font-size: 16px;
     overflow: hidden;
     padding: 0 20px;
@@ -118,4 +117,9 @@ h1 {
 .borderLeft{
 	border-radius: 50px 0 0 0px;
 	border-left: 2px solid #6A6A6A;
+}
+
+.aboutMe p{
+	line-height: 26px;
+    margin: 0;
 }
