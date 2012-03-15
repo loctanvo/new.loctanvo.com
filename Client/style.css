@@ -74,7 +74,7 @@ nav li.active{
     border-bottom: 2px solid #FFF;
     border-radius: 5px 5px 5px 5px;
     border-right: 2px solid #FFF;
-    box-shadow: 6px 6px 12px #2A2A2A inset;
+    box-shadow: 2px 2px 2px #2A2A2A inset;
     color: #DFDFDF;
     padding: 0 20px;
 }
