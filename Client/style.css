@@ -63,10 +63,11 @@ nav li.active{
 }
 
 #main {
-    margin: 40px auto;
+    margin: auto;
     width: 800px;
     font-size: 16px;
     overflow: hidden;	
+    color: #DFDFDF;
 }
 
 #about #main {
@@ -75,8 +76,8 @@ nav li.active{
     border-radius: 5px 5px 5px 5px;
     border-right: 2px solid #FFF;
     box-shadow: 2px 2px 2px #2A2A2A inset;
-    color: #DFDFDF;
     padding: 0 20px;
+    margin: 40px auto;
 }
 
 footer {
@@ -112,7 +113,7 @@ h1 {
 	clear: both;
 }
 
-.image {
+#about .image {
     border-radius: 50px 0 0 0px;
     display: block;
 }
@@ -122,9 +123,13 @@ h1 {
 	border-left: 2px solid #6A6A6A;
 }
 
-.aboutMe p{
+p{
 	line-height: 26px;
     margin: 0;
+}
+
+.pinkIsh{
+	color: #AD235E;
 }
 
 .lighterBlue{
@@ -153,13 +158,41 @@ h1 {
 	border-radius: 6px;
 }
 
+
+#portfolio h1{
+	color: #4D4D4D;
+	font-weight: normal;
+	margin: 10px 0 30px;
+}
+
 #images li{
+    margin: 30px auto;
+    overflow: hidden;
+    width: 685px;
+}
+
+#images li div{
+    float: left;
+}
+
+#images li div.image{
+
+}
+
+#images li div.description{
 	background: none repeat scroll 0 0 #4D4D4D;
-    border-radius: 5px 5px 5px 5px;
-    margin: 0 0 10px;
-    padding: 10px;
+    border-bottom: 2px solid #FFF;
+    border-radius: 0px 5px 5px 0px;
+    border-right: 2px solid #FFF;
+    box-shadow: 0px 2px 2px #2A2A2A inset;
+    width: 300px;
+    margin: 10px 0;
+}
+
+#images li div.description p{
+	margin: 30px;
 }
 
 #images li img{
-    border: 5px solid #EEEEEE;
+    border: 10px solid #CBC9C0
 }

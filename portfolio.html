@@ -14,9 +14,31 @@
 	        $(document).ready(function() {
 	            $('#images').embedagram({
 	                    instagram_id: 14765012,
-	                    thumb_width: 320
+	                    thumb_width: 360,
+	                    success: restructureHtml
 	                });
 	        });
+	        
+	        function restructureHtml()
+	        {
+	        	var images = $('#images li');
+	        	$.each(images, function(index, value){
+	        		var currentElement = $(value);
+	        		var title = currentElement
+	        						.find('img')
+	        						.attr('title')
+	        						.replace(/#/g, '<span class=\'pinkIsh\'>#</span>');
+	        		
+	        		if(title == ''){
+	        			title = 'Untitled';
+	        		}
+	        		
+	        		var linkHtml = '<div class=\'image\'>' + currentElement.html() + '</div>';
+	        		var titleHtml = '<div class=\'description\'><p>'+title+'</p></div>';
+	        		
+	        		currentElement.empty().append(linkHtml).append(titleHtml);
+	        	})
+	        }
 	    </script>
     </head>
 
@@ -45,6 +67,7 @@
         </header>
         <div class="clear" />
 		<div id="main">
+			<h1>Latest on <span class="pinkIsh">#</span>Instagram</h1>
 			<ul id="images"></ul>
 		</div>
 		<div class="clear" />
