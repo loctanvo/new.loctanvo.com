@@ -11,10 +11,10 @@
 	    <script type="text/javascript" src="Client/js/jquery-1.6.1.min.js"></script>
 	    <script type="text/javascript" src="Client/js/jquery-embedagram.pack.js"></script>
 	    <script type="text/javascript">
-	        $(document).ready(function() {
+	        $(document).ready(function() {          
 	            $('#images').embedagram({
 	                    instagram_id: 14765012,
-	                    thumb_width: 360,
+	                    thumb_width: 250,
 	                    success: restructureHtml,
 						limit: 50
 	                });
@@ -23,7 +23,9 @@
 	        function restructureHtml()
 	        {
 	        	var images = $('#images li');
-	        	$.each(images, function(index, value){
+                images.first().css('opacity', '1');
+                
+                $.each(images, function(index, value){
 	        		var currentElement = $(value);
 	        		var title = currentElement
 	        						.find('img')
@@ -38,7 +40,16 @@
 	        		var titleHtml = '<div class=\'description\'><p>'+title+'</p></div>';
 	        		
 	        		currentElement.empty().append(linkHtml).append(titleHtml);
-	        	})
+	        	});
+                
+                
+                
+                (function fadeInPicture(elem){
+                    elem.fadeIn(200,function(){
+                        $(this).next().length && fadeInPicture($(this).next()); 
+                    });
+                    })( $('#images li:first') );
+                
 	        }
 	    </script>
     </head>

@@ -80,6 +80,20 @@ nav li.active{
     margin: 40px auto;
 }
 
+#portfolio #main{
+    margin: 0;
+    width: 1920px;
+    overflow: hidden;	
+    color: #DFDFDF;
+}
+
+#portfolio h1{
+    width: 800px;
+    color: #4D4D4D;
+	font-weight: normal;
+    margin: 10px 0 20px 275px;
+}
+
 footer {
 	width: 800px;
 	margin: auto;
@@ -158,41 +172,28 @@ p{
 	border-radius: 3px;
 }
 
-
-#portfolio h1{
-	color: #4D4D4D;
-	font-weight: normal;
-	margin: 10px 0 30px;
+#images li{
+    margin: 2px;
+    overflow: hidden;
+    float: left;
+    display: none;
+    opacity: 0.5;
 }
 
-#images li{
-    margin: 30px auto;
-    overflow: hidden;
-    width: 685px;
+#images li:hover{
+    opacity: 1;
 }
 
 #images li div{
     float: left;
 }
 
-#images li div.image{
-
-}
-
 #images li div.description{
 	background: none repeat scroll 0 0 #4D4D4D;
-    border-bottom: 2px solid #FFF;
-    border-radius: 0px 5px 5px 0px;
-    border-right: 2px solid #FFF;
-    box-shadow: 0px 2px 2px #2A2A2A inset;
-    width: 300px;
-    margin: 10px 0;
+    width: 150px;
+    height: 250px;
 }
 
 #images li div.description p{
-	margin: 30px;
-}
-
-#images li img{
-    border: 10px solid #CBC9C0
+	margin: 20px 10px;
 }
