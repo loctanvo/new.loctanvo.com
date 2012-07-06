@@ -22,14 +22,14 @@ li{
 }
 
 header {
-    width: 800px;
+    width: 1000px;
     margin: 20px auto;
     font-size: 18px;
     min-height: 120px;
 }
 
 nav {
-	width: 680px;
+	width: 880px;
 	float: left;
 	border-bottom: 1px solid #6D6D6D;
 }
@@ -64,7 +64,7 @@ nav li.active{
 
 #main {
     margin: auto;
-    width: 800px;
+    width: 1000px;
     font-size: 16px;
     overflow: hidden;	
     color: #DFDFDF;
@@ -81,21 +81,22 @@ nav li.active{
 }
 
 #portfolio #main{
-    margin: 0;
-    width: 1920px;
+    margin: 0 auto 20px auto;
+    width: 2005px;
     overflow: hidden;	
     color: #DFDFDF;
 }
 
 #portfolio h1{
-    width: 800px;
+    width: 1000px;
     color: #4D4D4D;
 	font-weight: normal;
-    margin: 10px 0 20px 275px;
+    margin: 20px auto;
+    font-size: 28px;
 }
 
 footer {
-	width: 800px;
+	width: 1000px;
 	margin: auto;
 	text-align: center;
 	border-top: 1px solid;
@@ -178,22 +179,29 @@ p{
     float: left;
     display: none;
     opacity: 0.5;
+    transition: 1s;
+    height: 250px;
+    width: 350px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
 }
 
 #images li:hover{
     opacity: 1;
+    width: 500px;
 }
 
-#images li div{
+#images li div.image{
     float: left;
 }
 
 #images li div.description{
 	background: none repeat scroll 0 0 #4D4D4D;
-    width: 150px;
-    height: 250px;
+    height: inherit;
+    overflow: hidden;    
 }
 
 #images li div.description p{
-	margin: 20px 10px;
+	margin: 10px;
 }

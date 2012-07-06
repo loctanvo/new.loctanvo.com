@@ -42,11 +42,8 @@
 	        		currentElement.empty().append(linkHtml).append(titleHtml);
 	        	});
                 
-                //images.first().slideDown(600);
-                images.first().fadeIn(2000, function(){
-                    images.fadeIn(3000);
-                });                
-                
+                images.fadeIn(2000);
+
                 /*(function fadeInPicture(elem){
                     elem.fadeIn(200, function(){
                         $(this).next().length && fadeInPicture($(this).next()); 
@@ -80,9 +77,9 @@
 	            </ul>
 	        </nav>
         </header>
+        <h1>Latest on <span class="pinkIsh">#</span>Instagram</h1>
         <div class="clear" />
 		<div id="main">
-			<h1>Latest on <span class="pinkIsh">#</span>Instagram</h1>
 			<ul id="images" />
 		</div>
 		<div class="clear" />
