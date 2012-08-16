@@ -4,7 +4,7 @@ body{
 	color: #6D6D6D;
 	padding: 0; 
 	margin: 0;
-	background: #EEE;
+    background: #EEE;
 }
 
 a {
@@ -22,11 +22,21 @@ li{
 }
 
 header {
-    width: 1000px;
-    margin: 20px auto;
+    padding: 20px 0;
     font-size: 18px;
     min-height: 120px;
+    box-shadow: 0px -1px 10px #2A2A2A;
+    background-image: url('../Images/bg.png');
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
+
+    header #logoNavWrapper {
+        width: 1000px; 
+        margin: auto;
+    }
 
 nav {
 	width: 880px;
@@ -62,8 +72,11 @@ nav li.active{
     width: 40px;
 }
 
+#mainWrapper {
+    padding-top: 160px;
+}
+
 #main {
-    margin: auto;
     width: 1000px;
     font-size: 16px;
     overflow: hidden;	
@@ -171,6 +184,9 @@ p{
 #socialLinks a:hover .socialLink{
 	background: #FD5157;
 	border-radius: 3px;
+}
+#images {
+    margin: 5px 0;
 }
 
 #images li{

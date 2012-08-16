@@ -12,6 +12,8 @@
 	    <script type="text/javascript" src="Client/js/jquery-embedagram.pack.js"></script>
 	    <script type="text/javascript">
 	        $(document).ready(function() {          
+	            $('h1').fadeOut(1000);
+
 	            $('#images').embedagram({
 	                    instagram_id: 14765012,
 	                    thumb_width: 250,
@@ -22,7 +24,7 @@
 	        
 	        function restructureHtml()
 	        {
-	        	var images = $('#images li');
+	           	var images = $('#images li');
                 images.first().css('opacity', '1');
                 
                 $.each(images, function(index, value){
@@ -56,32 +58,36 @@
 
     <body id="portfolio">
         <header>
-        	<div id="logo">
-	        	<a href="http://www.loctanvo.com/">
-	                <span>L</span>
-	                <span>o</span>
-	                <span>c</span>
-	                <span>T</span>
-	                <span>a</span>
-	                <span>n</span>
-	                <span>V</span>
-	                <span>o</span>
-	                <span>&copy;</span>
-	            </a>	
-        	</div>
-	        <nav>
-	            <ul class="floatRight">
-	                <li class="floatLeft"><a href="index.html">About</a></li>
-	                <li class="floatLeft active"><a href="instagram.html">Instagram</a></li>
-	                <li class="floatLeft"><a href="http://www.loctanvo.com/blog" target ="_blank">Blog</a></li>
-	            </ul>
-	        </nav>
-        </header>
-        <h1>Latest on <span class="pinkIsh">#</span>Instagram</h1>
-        <div class="clear" />
-		<div id="main">
-			<ul id="images" />
-		</div>
+            <div id="logoNavWrapper">
+        	    <div id="logo">
+	        	    <a href="http://www.loctanvo.com/">
+	                    <span>L</span>
+	                    <span>o</span>
+	                    <span>c</span>
+	                    <span>T</span>
+	                    <span>a</span>
+	                    <span>n</span>
+	                    <span>V</span>
+	                    <span>o</span>
+	                    <span>&copy;</span>
+	                </a>	
+        	    </div>
+	            <nav>
+	                <ul class="floatRight">
+	                    <li class="floatLeft"><a href="index.html">About</a></li>
+	                    <li class="floatLeft active"><a href="instagram.html">Instagram</a></li>
+	                    <li class="floatLeft"><a href="http://www.loctanvo.com/blog" target ="_blank">Blog</a></li>
+	                </ul>
+	            </nav>
+            </div>
+        </header>       
+        <div id="mainWrapper">
+            <h1>Loading from <span class="pinkIsh">#</span>Instagram...</h1>
+            <div id="main" class="clear">
+                <ul id="images" />
+		    </div>  
+        </div>
+		
 		<div class="clear" />
         <footer>
             <div>Copyright &copy;2012 Personal Website of Loc Tan Vo. All rights reserved. Powered by nice food and drinks.</div>
