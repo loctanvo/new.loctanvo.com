@@ -24,7 +24,6 @@ li{
 header {
     font-size: 18px;
 	background-color: #FFF;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -32,8 +31,9 @@ header {
 
 header #logoNavWrapper {
 	width: 1000px; 
-	margin: 10px auto;
+	margin: auto;
 	overflow: hidden;
+    padding: 10px 0;
 }
 
 nav li {
@@ -62,10 +62,6 @@ nav li.active{
     font-size: 30px;
     text-transform: uppercase;
     width: 40px;
-}
-
-#mainWrapper {
-    padding-top: 160px;
 }
 
 #main {
