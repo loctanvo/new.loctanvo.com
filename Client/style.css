@@ -23,7 +23,7 @@ li{
 
 header {
     font-size: 18px;
-	background-color: #FFF;
+	background-color: #F8F8F8;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -42,11 +42,12 @@ nav li {
 }
 
 nav li.active{
-	background: #CBC9C0;
-	border-bottom: 1px solid #FFF;
-	border-radius: 5px;
-    border-right: 1px solid #FFF;
-    box-shadow: 1px 1px 1px #B4B4B4 inset;
+	background: #72ABBD;
+	border-radius: 2px;
+}
+
+nav li.active a{
+    color: #F8F8F8;
 }
 
 #logo {
@@ -91,16 +92,18 @@ nav li.active{
 }
 
 footer {
-	width: 1000px;
-	margin: auto;
 	text-align: center;
-	border-top: 1px solid;
-	color: #728088;
-	padding: 5px 0;
+	padding: 10px 0;
+    background: #a0bab7;
+    background: #B4B4B4;
 }
 
 h1 {
-	color: #ea4c88
+	color: #ea4c88;
+    font-family: 'Wire One';
+    font-size: 98px;
+    font-weight: normal;
+    margin: 20px 0;
 }
 
 .floatLeft {
@@ -161,12 +164,12 @@ p{
 
 .socialLink{
 	float: left;
+    background-color: #a0bab7;
 }
 
 #socialLinks a:hover .socialLink{
-	/*background: #72ABBD;*/
     background: #66cccc;
-	border-radius: 3px;
+    margin: 0 1px;
 }
 #images {
     margin: 5px 0;
