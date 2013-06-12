@@ -100,7 +100,7 @@ footer {
 }
 
 h1 {
-	color: #AD235E
+	color: #ea4c88
 }
 
 .floatLeft {
@@ -139,7 +139,8 @@ p{
 }
 
 .pinkIsh{
-	color: #AD235E;
+	/*color: #AD235E;*/
+    color: #ea4c88;
 }
 
 .lighterBlue{
@@ -160,11 +161,11 @@ p{
 
 .socialLink{
 	float: left;
-	width: 25%;
 }
 
 #socialLinks a:hover .socialLink{
-	background: #FD5157;
+	/*background: #72ABBD;*/
+    background: #66cccc;
 	border-radius: 3px;
 }
 #images {
