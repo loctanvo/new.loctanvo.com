@@ -22,26 +22,17 @@ li{
 }
 
 header {
-    padding: 20px 0;
     font-size: 18px;
-    min-height: 120px;
-    box-shadow: 0px -1px 10px #2A2A2A;
-    background-image: url('../Images/bg.png');
+	background-color: #FFF;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
-    header #logoNavWrapper {
-        width: 1000px; 
-        margin: auto;
-    }
-
-nav {
-	width: 880px;
-	float: left;
-	border-bottom: 1px solid #6D6D6D;
+header #logoNavWrapper {
+	width: 1000px; 
+	margin: auto;
 }
 
 nav li {
@@ -80,16 +71,10 @@ nav li.active{
     width: 1000px;
     font-size: 16px;
     overflow: hidden;	
-    color: #DFDFDF;
+    color: #000;
 }
 
 #about #main {
-    background: none repeat scroll 0 0 #4D4D4D;
-    border-bottom: 2px solid #FFF;
-    border-radius: 5px 5px 5px 5px;
-    border-right: 2px solid #FFF;
-    box-shadow: 2px 2px 2px #2A2A2A inset;
-    padding: 0 20px;
     margin: 40px auto;
 }
 
