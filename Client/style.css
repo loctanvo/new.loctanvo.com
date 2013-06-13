@@ -41,12 +41,19 @@ nav li {
 	padding: 10px;
 }
 
+nav li:hover{
+	background: #ea4c88;
+}
+
 nav li.active{
 	background: #72ABBD;
+}
+
+nav li.active, nav li:hover{
 	border-radius: 2px;
 }
 
-nav li.active a{
+nav li.active a, nav li:hover a{
     color: #F8F8F8;
 }
 
